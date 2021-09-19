@@ -11,11 +11,13 @@ const routes: Routes = [
   }, 
   {
     path:'card',
-    component:CardComponent
+    component:CardComponent,
+    
   }, 
   {
     path:'card/:id',
-    component:DetalleComponent
+    component:DetalleComponent,
+    data: { breadcrumb: {alias: 'detalle'}}
   }, 
   {
     path:'carousel',

@@ -1,17 +1,14 @@
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
 
 <div class="swiper-container">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide" *ngFor="let img of imagen">
-            <img [src]="img">
-            ...
+        <div class="swiper-slide" *ngFor="let superheroe of super">
+            <img src='{{ "assets/" +superheroe.image + ".jpg" }}'>
+            <button mat-raised-button color="primary" [routerLink]="['/card',superheroe.id]"> Ver mas </button>
+            
+            
+            
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>

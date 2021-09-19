@@ -8,3 +8,10 @@
 color: aliceblue;
 
 }
+
+.contenedor button{
+   float: left;
+   margin-left: 50px;
+    
+
+}
