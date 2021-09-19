@@ -17,7 +17,19 @@ const routes: Routes = [
   {
     path:'card/:id',
     component:DetalleComponent,
-    data: { breadcrumb: {alias: 'detalle'}}
+    data: {
+      title: 'page2', 
+      breadcrumb: [
+        {
+          label: 'page {{pageOneID}}',// pageOneID Parameter value will be add 
+          url: '/page1/:pageOneID'
+        },
+        {
+          label: 'page {{pageTwoID}}',// pageTwoID Parameter value will be add 
+          url: ''
+        }
+      ]
+    },
   }, 
   {
     path:'carousel',

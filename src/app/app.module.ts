@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+
+import { MatBreadcrumbModule } from 'mat-breadcrumb';
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -14,7 +18,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule,
+    MatBreadcrumbModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

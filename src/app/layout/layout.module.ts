@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { MaterialsModule } from '../materials/materials.module';
 import { DetalleComponent } from './detalle/detalle.component';
 
+import { MatBreadcrumbModule } from 'mat-breadcrumb';
+
 // importo el swiper
 import { SwiperModule } from 'swiper/angular';
 
@@ -25,11 +27,13 @@ import { SwiperModule } from 'swiper/angular';
     CommonModule,
     LayoutRoutingModule,
     MaterialsModule,
-    SwiperModule
+    SwiperModule,
+    MatBreadcrumbModule
   ],
   exports:[
     MaterialsModule,
-    SwiperModule
+    SwiperModule,
+    MatBreadcrumbModule
   ]
 })
 export class LayoutModule { }

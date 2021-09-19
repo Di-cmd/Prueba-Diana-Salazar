@@ -9,6 +9,7 @@ import { LayoutComponent } from './layout/layout.component';
 
 // importo el modulo de materials
 import { MaterialsModule } from '../materials/materials.module';
+import { MatBreadcrumbModule } from 'mat-breadcrumb';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MaterialsModule } from '../materials/materials.module';
   imports: [
     CommonModule,
     SharedRoutingModule,
-    MaterialsModule
+    MaterialsModule,
+    MatBreadcrumbModule
   ]
 })
 export class SharedModule { }
