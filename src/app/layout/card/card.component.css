@@ -1,0 +1,25 @@
+.super{
+    margin-left: 50px;
+text-align: center;
+}
+
+.super img{
+    height: 90px;
+    width: 40%;
+    margin: 15px;
+
+    
+    
+}
+.card{
+    margin:50px;
+    width: 35%;
+    float: left;
+    
+
+}
+
+.card mat-card-content{
+text-align: justify;
+    
+}

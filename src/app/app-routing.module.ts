@@ -1,7 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+
+//Importación de los modulos
+import { SharedModule } from './shared/shared.module';
+
+const routes: Routes = [
+
+  {
+    path:'',
+    loadChildren: () => import('./shared/shared.module').then(m => m.SharedModule)
+    
+
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

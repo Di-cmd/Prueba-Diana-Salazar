@@ -1,0 +1,16 @@
+<div class="super">
+
+    <div *ngFor="let superheroe of super" class="card">
+
+        <mat-card >
+    
+            <mat-card-title>{{superheroe.name}}</mat-card-title>
+            <img src='{{ "assets/" +superheroe.image + ".jpg" }}'>
+            <mat-card-content>{{superheroe.descripcion}}</mat-card-content>
+    
+            <button mat-raised-button color="primary" [routerLink]="['/card',superheroe.id]"> Ver mas </button>
+            
+        </mat-card>
+    </div>
+
+</div>
