@@ -24,7 +24,6 @@
     "@ng-bootstrap/ng-bootstrap": "^10.0.0",
     "bootstrap": "^4.5.0",
     "flexboxgrid": "^6.3.1",
-    "mat-breadcrumb": "^1.0.1",
     "rxjs": "~6.6.0",
     "swiper": "^7.0.6",
     "tslib": "^2.3.0",

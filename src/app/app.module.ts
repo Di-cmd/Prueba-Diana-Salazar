@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
-import { MatBreadcrumbModule } from 'mat-breadcrumb';
+
 
 
 @NgModule({
@@ -19,7 +19,7 @@ import { MatBreadcrumbModule } from 'mat-breadcrumb';
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
-    MatBreadcrumbModule
+  
     
   ],
   providers: [],
