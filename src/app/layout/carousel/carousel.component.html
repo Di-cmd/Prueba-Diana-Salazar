@@ -1,7 +1,13 @@
-<swiper effect="fade">
-    <ng-template swiperSlide *ngFor="let superheroe of super">
-        <h1>{{superheroe.name}}</h1>
-        <button mat-raised-button color="primary" [routerLink]="['/card',superheroe.id]"> Ver mas </button>
-        <img src='{{ "assets/" +superheroe.image + ".jpg" }}'>              
-    </ng-template>
-</swiper>
+
+<div class="swiper">
+    <swiper effect="fade">
+        <ng-template swiperSlide *ngFor="let superheroe of super">
+            <img src='{{ "assets/" +superheroe.image + ".jpg" }}'> 
+            <div class="boton">
+                <h1>{{superheroe.name}}</h1>
+                <button mat-raised-button color="primary" [routerLink]="['/card',superheroe.id]"> Ver mas </button>               
+            </div>
+         
+        </ng-template>
+    </swiper>
+</div>

@@ -7,8 +7,6 @@ text-align: center;
     height: 90px;
     width: 40%;
     margin: 15px;
-
-    
     
 }
 .card{
@@ -21,5 +19,28 @@ text-align: center;
 
 .card mat-card-content{
 text-align: justify;
+margin: 4%;
     
 }
+.card mat-card{
+
+    padding: 7px;
+    height: 450px;
+        
+    }
+
+    .card  mat-card-title{
+     margin:2%
+    }
+
+    @media (max-width:993px){
+        .card mat-card{
+
+            width:auto;
+            height:auto;
+                
+            }
+      .super{
+          width: 100%;
+      }
+    }
