@@ -1,14 +1,7 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 
 //importacion del modulo del carousel
-import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper';
-import 'swiper/scss';
-import 'swiper/scss/navigation';
-import 'swiper/scss/pagination';
-
-//importando el servicio:
-
+import SwiperCore, {Swiper, Navigation, Pagination } from 'swiper';
 
 @Component({
   selector: 'app-carousel',
@@ -18,6 +11,7 @@ import 'swiper/scss/pagination';
 export class CarouselComponent implements OnInit {
 
   mySwiper: Swiper;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -53,32 +47,18 @@ export class CarouselComponent implements OnInit {
   ]
 
 
-  AfterViewInit (){
-    this.mySwiper= new Swiper('.swiper-container');
-  
+  ngAfterViewInit() {
+
+    SwiperCore.use([Navigation, Pagination]);
+
+    this.mySwiper = new Swiper(".swiper-container", {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+        }
+      });
   }
-
 }
-Swiper.use([Navigation, Pagination]);
-
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});

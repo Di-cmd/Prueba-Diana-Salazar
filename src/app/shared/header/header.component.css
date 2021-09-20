@@ -2,17 +2,23 @@
     margin: 0%;
     padding:0%;
     margin-bottom: 0%;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 .contenedor span{
 color: aliceblue;
-
+font-family: Arial, Helvetica, sans-serif;
+font-size: 90%;
 }
 
 .contenedor button{
    float: left;
    margin-left: 50px;
-   
-
+   color: aliceblue;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 90%;
 }
  
+.boton{
+    padding: 8%;
+}

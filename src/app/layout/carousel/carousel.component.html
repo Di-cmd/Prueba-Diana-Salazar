@@ -6,10 +6,8 @@
         <div class="swiper-slide" *ngFor="let superheroe of super">
             <h1>{{superheroe.name}}</h1>
             <button mat-raised-button color="primary" [routerLink]="['/card',superheroe.id]"> Ver mas </button>
-            <img src='{{ "assets/" +superheroe.image + ".jpg" }}'>
+            <img src='{{ "assets/" +superheroe.image + ".jpg" }}'>              
 
-               
-            
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>

@@ -13,10 +13,19 @@ const routes: Routes = [
     path:'card',
     component:CardComponent,
     
+    
   }, 
   {
     path:'card/:id',
     component:DetalleComponent,
+    data: { title: 'producto',
+    breadcrumb: [
+      {
+        label: 'detalle',
+        url: 'card/:id'
+      }
+    ]
+  }
   }, 
   {
     path:'carousel',

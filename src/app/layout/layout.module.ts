@@ -11,7 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { MaterialsModule } from '../materials/materials.module';
 import { DetalleComponent } from './detalle/detalle.component';
 
-
+import { PpBreadcrumbsModule } from 'pp-breadcrumbs';
 // importo el swiper
 import { SwiperModule } from 'swiper/angular';
 
@@ -27,11 +27,13 @@ import { SwiperModule } from 'swiper/angular';
     LayoutRoutingModule,
     MaterialsModule,
     SwiperModule,
+    PpBreadcrumbsModule
     
   ],
   exports:[
     MaterialsModule,
-    SwiperModule,
+    SwiperModule
+    
    
   ]
 })
