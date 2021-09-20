@@ -41,7 +41,7 @@ export class ProductosService {
   constructor() { }
 
   getAllProducts(){
-    return this.super;
+    return this.super.find(item=> item);
   }
 
 

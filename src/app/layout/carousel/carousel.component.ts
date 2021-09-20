@@ -1,18 +1,18 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { SwiperContainer } from '../swiper/swiper.component';
+
+declare var Swiper: any;
+
 
 //importacion del modulo del carousel
-import SwiperCore, {Swiper, Navigation, Pagination } from 'swiper';
 
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.css']
 })
-export class CarouselComponent implements OnInit {
+export class CarouselComponent {
 
-  mySwiper: Swiper;
-
-  constructor() { }
 
   ngOnInit(): void {
   }
@@ -47,18 +47,32 @@ export class CarouselComponent implements OnInit {
   ]
 
 
-  ngAfterViewInit() {
+  name = 'Angular with Swiper';
+  @ViewChild('homeSlide', {static: true}) public homeSlide: SwiperContainer;
 
-    SwiperCore.use([Navigation, Pagination]);
+  public swipeOptions = {
+    spaceBetween: 0,
+    loop: true,
+    speed: 1000,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  };
 
-    this.mySwiper = new Swiper(".swiper-container", {
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-        }
-      });
+  constructor() {
+  }
+
+  goToNextPage() {
+    this.homeSlide.swiper.slideNext();
   }
 }

@@ -14,13 +14,14 @@ import { DetalleComponent } from './detalle/detalle.component';
 import { PpBreadcrumbsModule } from 'pp-breadcrumbs';
 // importo el swiper
 import { SwiperModule } from 'swiper/angular';
+import { SwiperContainer, SwiperSlide } from './swiper/swiper.component';
 
 @NgModule({
   declarations: [
     CardComponent,
     CarouselComponent,
     HomeComponent,
-    DetalleComponent
+    DetalleComponent, SwiperContainer, SwiperSlide 
   ],
   imports: [
     CommonModule,

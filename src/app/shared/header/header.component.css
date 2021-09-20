@@ -47,18 +47,8 @@ font-size: 90%;
 
 @media (max-width: 898px){
     .boton{
-        margin-left: -300px;
+        margin-left: -450px;
+        display: flex;
         float:flex;
     }
-
-
-    }
-
-
-@media (max-width: 684px){
-
-
 }
-
-
-
