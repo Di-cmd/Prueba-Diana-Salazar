@@ -22,5 +22,19 @@
     width:70%;
     height: 30%;
    margin-left: 15%;
-   
+   border-style:outset;
+}
+
+@media (max-width: 1148px){
+    .centro h1{
+        font-size:100%;
+    }
+    .centro mat-card{
+        width:70%;
+        height: 70%;
+       margin-left: 15%;
+       border-style:outset;
+    }
+
+
 }

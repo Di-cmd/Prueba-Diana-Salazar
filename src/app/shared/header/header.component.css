@@ -22,3 +22,43 @@ font-size: 90%;
 .boton{
     padding: 8%;
 }
+
+
+@media (max-width: 1150px){
+
+
+.contenedor mat-toolbar{
+    height: 150px;
+}
+.span{   
+    text-align: center;
+    margin-top: -5%;
+    margin-left: 30%;
+}
+      
+.boton{
+    margin-left: -50%;
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+}
+
+@media (max-width: 898px){
+    .boton{
+        margin-left: -300px;
+        float:flex;
+    }
+
+
+    }
+
+
+@media (max-width: 684px){
+
+
+}
+
+
+
