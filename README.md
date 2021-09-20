@@ -5,7 +5,7 @@ Prueba Técnica - Diana Salazar
 
 Para clonar el proyecto: En el git hub, es necesario cambiar de la rama main por defecto a la rama master posterior a esto: ejecutar el siguiente comando en la terminal de git bash: 
 
- git clone --branch {master} url 
+ git clone --branch master url 
 
  Esto permitira que el proyecto se clone de forma correcta.
  Posterior a esto, se abre el proyecto en el editor de codigo de visual studio code, 
