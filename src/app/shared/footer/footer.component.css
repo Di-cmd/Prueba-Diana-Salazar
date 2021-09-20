@@ -8,6 +8,19 @@
 
 }
 
-.footer{
+.footer h2{
     margin-bottom:-400px;
+}
+
+
+
+@media (max-width: 1318px){
+    
+#correo{
+    margin-left: 10%;
+}
+    .footer mat-toolbar h1{
+        margin-left: 4%;
+
+    }
 }
