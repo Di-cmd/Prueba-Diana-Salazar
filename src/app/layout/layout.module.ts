@@ -16,6 +16,7 @@ import { PpBreadcrumbsModule } from 'pp-breadcrumbs';
 import { SwiperModule } from 'swiper/angular';
 import { SwiperContainer, SwiperSlide } from './swiper/swiper.component';
 
+
 @NgModule({
   declarations: [
     CardComponent,
@@ -28,12 +29,14 @@ import { SwiperContainer, SwiperSlide } from './swiper/swiper.component';
     LayoutRoutingModule,
     MaterialsModule,
     SwiperModule,
-    PpBreadcrumbsModule
+    PpBreadcrumbsModule,
+  
     
   ],
   exports:[
     MaterialsModule,
-    SwiperModule
+    SwiperModule,
+    
     
    
   ]

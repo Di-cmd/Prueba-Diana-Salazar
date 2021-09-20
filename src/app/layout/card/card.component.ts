@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-
-// importo el modelo
-import{Super} from 'src/app/core/producto.model';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-card',

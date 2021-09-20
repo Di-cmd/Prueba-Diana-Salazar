@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-
+import { NgModule } from '@angular/core';
 // importo el modelo
 import{Super} from 'src/app/core/producto.model';
 
